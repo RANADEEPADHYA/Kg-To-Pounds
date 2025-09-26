@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
         button = findViewById(R.id.button); //assign the object to @+id/button
         textView = findViewById(R.id.textView3); //assign the object to @+id/textView3
         editText = findViewById(R.id.editTextText); //assign the object to @+id/editTextText
@@ -38,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 int KG = Integer.parseInt(s);
                 double Pound = 2.205*KG;
                 textView.setText("The Corrosponding Value is " + Pound);
+                Toast.makeText(MainActivity.this, "Thank you for using", Toast.LENGTH_SHORT).show();
             }
         });
 
